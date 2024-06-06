@@ -35,11 +35,34 @@
 
     <!-- Main -->
     <div class="container coffee">
-        <section class="coffee__container">
+        <section class="home__banner">
+            <div class="slideshow">
+                <div class="slideshow__inner">
+                    <a href="#!" class="slideshow__item">
+                        <img src="../assets/img/banner_ca_phe.jpg" alt="" class="slideshow__img" />
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Order -->
+        <div class="row order">
+            <p class="order__title">Sắp xếp theo</p>
+            <div class="order-options">
+                <div class="btn" data-sort="name">
+                    <p class="order__text">Tên</p>
+                </div>
+                <div class="btn" data-sort="price_asc">
+                    <p class="order__text">Giá tăng dần</p>
+                </div>
+                <div class="btn" data-sort="price_desc">
+                    <p class="order__text">Giá giảm dần</p>
+                </div>
+            </div>
+        </div>
+        <section class="home__container">
             <div class="row row-cols-4 row-cols-md-1">
                 <!-- Các sản phẩm cà phê sẽ được hiển thị tại đây -->
             </div>
-
         </section>
     </div>
 
@@ -48,6 +71,11 @@
     <script>
         load("#footer", "../templates/footer.html");
     </script>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/GetCoffeeProducts-logined.js" defer></script>
+    <script src="../assets/js/scripts.js"></script>
 </body>
 
 </html>
